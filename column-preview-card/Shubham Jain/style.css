@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 60%;
+  margin: auto;
+  height: 100vh;
+  background: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card {
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: wheat;
+  padding: 40px 48px 35px;
+}
+
+.card-body h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: -50px;
+  margin-bottom: 35px;
+}
+
+.card-body p {
+  color: hsla(0, 0%, 100%, 0.68);
+  line-height: 1.8;
+}
+
+button {
+  padding: 13px 30px;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: black;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+button:hover {
+  background: transparent;
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+}
+
+.sedan {
+  background: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background: hsl(179, 100%, 13%);
+}
+
+.sedan-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suv-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 376px) {
+  body {
+    width: 85%;
+    margin: 25rem auto;
+  }
+
+  .main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .card:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .card:last-child {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
