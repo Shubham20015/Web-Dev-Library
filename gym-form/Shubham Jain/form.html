@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Complete early!</title>
+</head>
+
+<body>
+    <div class="bg-overlay">
+        <form class="main-form">
+            <h1>Membership Form ✨</h1>
+            <div class="tab">
+                <div class="inputContainer">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="Enter name" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="email">E-Mail: </label>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="membership">Choose type of membership:</label>
+
+                    <select id="membership" name="membership" required>
+                        <option value="deluxe">Deluxe</option>
+                        <option value="premium">Premium</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </div>
+                <div class="gender-type">
+                    <input type="radio" id="male" name="gender" checked>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+            <div class="tab">
+                <label for="weight">Weight: </label>
+                <div class="range-slider">
+                    <span id="rs-bullet" class="rs-label">0</span>
+                    <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="200" required>
+
+                </div>
+
+                <div class="box-minmax">
+                    <span>0</span><span>200</span>
+                </div>
+
+                <br>
+
+                <label for="height">Height: </label>
+                <div class="range-slider">
+                    <span id="rs-bullet" class="rs-label height">0</span>
+                    <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="7" step="0.1"
+                        required>
+
+                </div>
+
+                <div class="box-minmax">
+                    <span>0</span><span>7</span>
+                </div>
+            </div>
+
+            <div class="tab">
+                <label for="message">Any message for us: </label>
+                <br>
+                <textarea name="message" id="message" placeholder="Type your message here"></textarea>
+            </div>
+
+            <div class="btns" style="overflow:auto;">
+                <div style="float:right;">
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

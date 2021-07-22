@@ -14,7 +14,7 @@
 2. git add .<br>
 3. git commit -m 'your message'<br>
 4. git remote add origin 'your_url_name'<br>
-5. git push -u add origin master<br>
+5. git push<br>
    git status(optional)<br>
 Check your repository all the files and folders will be uploaded in your forked repository.<br>
 <h2>TO CREATE A PULL REQUEST</h2>
