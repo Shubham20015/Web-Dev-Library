@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Sarabun&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background: #30336b;
+  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(0, 0, 0, 0.25) 200%
+    );
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  font-family: "Sarabun", sans-serif;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 80vh;
+  background: #f4f5f5;
+  border-radius: 15px;
+  box-shadow: 0px 0px 16px rgba(225, 225, 225, 0.15);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  height: inherit;
+  padding: 50px;
+}
+
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Libre Baskerville", serif;
+}
+
+.hero-heading h3 {
+  font-family: "Sarabun", sans-serif;
+  letter-spacing: 1.7px;
+}
+
+form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputContainer i {
+  position: absolute;
+}
+.inputContainer {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.icon {
+  padding: 15px;
+  color: #323232;
+  width: 80px;
+  text-align: left;
+}
+.right-icon {
+  margin-left: -50px;
+  cursor: pointer;
+}
+
+input {
+  padding: 15px 50px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin-bottom: 25px;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px;
+}
+
+input:focus {
+  border: 2px solid #574343;
+}
+
+input[type="checkbox"] {
+  box-shadow: none;
+  padding: 9px;
+  margin-right: 5px;
+  position: relative;
+  width: 1.5em;
+  height: 1.5em;
+  color: #363839;
+  border: 1px solid #bdc1c6;
+  border-radius: 4px;
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1);
+}
+
+input[type="checkbox"]::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 2px;
+  left: 7px;
+  width: 5px;
+  height: 12px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked {
+  color: white;
+  border-color: #1c1c1c;
+  background: #1c1c1c;
+}
+
+input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+.extra-section {
+  font-size: 14px;
+  display: flex;
+}
+
+.extra-section p {
+  cursor: pointer;
+}
+
+.remember {
+  display: flex;
+  margin-right: 60px;
+}
+
+button {
+  padding: 15px 80px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background: #303030;
+  color: #f4f5f5;
+  font-size: 16px;
+  border: 2px solid #303030;
+}
+
+button:hover {
+  background: #f4f8f8;
+  color: #303030;
+}
+
+.login-direct {
+  font-size: 18px;
+}
+
+.login-direct a {
+  text-decoration: none;
+  color: #323232;
+}
+
+.right {
+  background: url("../../images/hero.jpeg");
+  width: 50%;
+  height: inherit;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 15px 15px 0;
+}
+
+#overlay {
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 15px 15px 0;
+}
+
+.text,
+.quote {
+  text-align: center;
+  color: rgba(255, 253, 252, 0.8);
+  font-size: 20px;
+  transform: translateY(180px);
+  font-family: "Libre Baskerville", serif;
+}
+
+.quote {
+  margin-top: 50px;
+  font-size: 16px;
+  padding: 0 120px;
+}
+
+.membership-section {
+  position: absolute;
+  bottom: 12px;
+  right: 0;
+}
+
+.membership-section a {
+  text-decoration: none;
+  color: whitesmoke;
+  background: rgb(13, 13, 13);
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 10px 0 0 0;
+}
+
+@media screen and (max-width: 376px) {
+  .main {
+    width: 85%;
+  }
+
+  .left {
+    width: 100%;
+    padding: 0%;
+  }
+
+  .right {
+    display: none;
+  }
+}
