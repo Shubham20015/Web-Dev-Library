@@ -1,0 +1,157 @@
+/* mobile:375px */
+/* desktop:1440px */
+body {
+  
+  margin: 1% 6% 0% 6%;
+  padding: 0px;
+  font-family: "Inter", sans-serif;;
+  background-color: var(--color-secondary);
+  color:var(--font-color) ;
+}
+.head{
+  margin-left: 10px;
+}
+.theme-light {
+  --color-primary:hsl(227, 47%, 96%);
+  --color-secondary:hsl(0, 0%, 100%);
+  --font-color:hsl(230, 17%, 14%);
+  --text-color: hsl(228, 12%, 44%);
+  --button:hsl(228, 12%, 44%);
+  --hover:hsl(227, 58%, 87%) ;
+ 
+}
+.theme-dark {
+  --color-primary:hsl(228, 28%, 20%);
+  --color-secondary:hsl(230, 17%, 14%);
+  --font-color:hsl(0, 0%, 100%);
+  --text-color:hsl(228, 34%, 66%);
+  --button:hsl(163, 72%, 41%);
+  --hover:hsl(229, 24%, 30%);
+ 
+}
+
+.container button {
+  color: aliceblue;
+  background-color:var(--button);
+  cursor: pointer;
+  padding: 5px 10px;
+  border:1px solid hsl(228, 34%, 66%) ;
+  border-radius: 5px;
+  float: right;
+  margin-right: 10px;
+}
+
+.one {
+  display: flex;
+  text-align: center;
+
+}
+.facebook {
+
+  background-color: var(--color-primary);
+  width: 23%;
+  height: 175px;
+  margin: 10px;
+  padding: 5px;
+border-top:3px solid hsl(208, 92%, 53%) ;
+  border-radius: 6px;
+}
+.twitter {
+  background-color:  var(--color-primary);
+  width: 23%;
+  height: 175px;
+  margin:10px;
+  padding: 5px;
+  border-radius: 6px;
+  border-top:3px solid  hsl(203, 89%, 53%);
+}
+.insta {
+  
+  /* border-top: 3px solid linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%); */
+  background-color: var(--color-primary);
+  width: 23%;
+  height: 175px;
+  margin: 10px;
+  padding: 5px;
+  border-top: 3px solid hotpink;
+  border-radius: 6px;
+}
+.youtube {
+  background-color: var(--color-primary);
+  
+  width: 23%;
+  height: 175px;
+  margin:10px;
+  padding: 5px;
+border-top:3px solid hsl(348, 97%, 39%) ;
+  border-radius: 6px;
+}
+a,p,b,h5{
+   color:var(--text-color); 
+}
+a:hover{
+  color: var(--font-color);
+}
+
+.three {
+  display: flex;
+  text-align:center;
+  font-size: x-large;
+}
+.facebook1 {
+  background-color:  var(--color-primary);
+  height: 125px;
+  width: 23%;
+  margin: 10px;
+  padding: 5px;
+
+  border-radius: 6px;
+}
+.insta1 {
+  background-color: var(--color-primary);
+  height: 125px;
+  width: 23%;
+  margin: 10px;
+  padding: 5px;
+
+  border-radius: 6px;
+}
+.twitter1 {
+  background-color:  var(--color-primary);
+  height: 125px;
+  width: 23%;
+  margin: 10px;
+  padding: 5px;
+
+  border-radius: 6px;
+}
+.youtube1 {
+  background-color: var(--color-primary);
+
+  height: 125px;
+  width: 23%;
+  margin: 10px;
+  padding: 5px;
+
+  border-radius: 6px;
+}
+.facebook1:hover, .youtube1:hover ,.twitter1:hover, .insta1:hover, .facebook:hover, .youtube:hover ,.twitter:hover, .insta:hover{
+background-color: var(--hover);
+cursor: pointer;
+}
+
+@media only screen and (max-width:374px) {
+  .one,.three{
+      display: block;
+    
+  }
+  .facebook, .youtube ,.twitter, .insta{
+    width: 82%;
+  }
+  .facebook1, .youtube1 ,.twitter1, .insta1{
+    width: 82%;
+  }
+  .container button{
+    float: auto;
+  } 
+}
