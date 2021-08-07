@@ -17,7 +17,7 @@ In essence, the PBL model consists of these seven characteristics:
 | 2     | Column preview cards    |
 | 3     | Gym SignIn/SignUp Form  |
 | 4     | Rock,Paper,Scissor Game |
-
+| 5     | Live weather webapp     |
 
 
 ## Instructions to set up project on your computer
