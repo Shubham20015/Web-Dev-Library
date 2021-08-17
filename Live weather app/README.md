@@ -1,5 +1,6 @@
-# Gym SignUp/Contact Form
-![Design preview for the 3-column preview card component coding challenge](./design/Desktop-preview.png)
+# Live Weather App
+
+![Design preview for the Live weather webapp coding challenge](./design/Desktop-preview.png)
 
 ## Welcome! 👋
 
@@ -7,19 +8,19 @@ Thanks for checking out this front-end coding challenge.
 
 These challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
+**To do this challenge, you need a basic understanding of HTML, CSS and a bit of JavaScript.**
 
 ## The challenge
 
-Your challenge is to build out this Gym login/signup form component and get it looking as close to the design as possible.
-You also have to build membership form using trending webpages style i.e Glassmorphism css technique with help of pagination (you have a web site with lots of pages/components, you may wish to add some sort of pagination to each page/component)
+Your challenge is to build out this Live Weather App and get it looking as close to the design as possible.
 
 You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 Your users should be able to:
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Search state / country current temperature using API
 
 ## Where to find everything
 
@@ -30,6 +31,16 @@ The designs are in JPG static format. Using JPGs will mean that you'll need to u
 You will find all the required assets in the `/images` folder. The assets are already optimized.
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+
+## How to use API
+
+An application programming interface(API) is a connection between computers or between computer programs. It is a type of software interface, offering a service to other pieces of software. A document or standard that describes how to build such a connection or interface is called an API specification.
+
+For this project we use [OpenWeatherAPI](https://openweathermap.org/api), first you have to signup on website to get API key then for further usage follow this [Docs](https://openweathermap.org/current)
+
+You find your API key under my api keys section in Name section by hovering over it.
+
+How to use api in general ? Watch this Tutorial [Fetch an API](https://www.youtube.com/watch?v=cuEtnrL9-H0)
 
 ## Building your project
 
