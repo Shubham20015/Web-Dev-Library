@@ -1,0 +1,139 @@
+
+   * {
+  margin: 0;
+  padding: 0;
+ 
+}
+ body {
+    margin: 7% 12% 5% 12%;
+    background-color:hsl(0, 0%, 95%);
+}
+
+.car {
+    display: flex;
+    color: hsla(0, 0%, 100%, 0.75);
+  
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    padding: 15px 0px;
+
+}
+#but1{
+border: hsl(0, 0%, 95%);
+border-radius: 50px;
+color:hsl(31, 77%, 52%) ;
+background-color:hsl(0, 0%, 95%);
+margin:100px 0px 0px 0px ;
+padding: 15px 45px;
+cursor: pointer;
+font-family: 'Lexend Deca', sans-serif;
+position:inherit;
+}
+#but2{
+    border: hsl(0, 0%, 95%);
+border-radius: 50px;
+color:hsl(179, 100%, 13%) ;
+background-color:hsl(0, 0%, 95%);
+margin:100px 0px 0px 0px ;
+padding:15px 45px;
+cursor: pointer;
+font-family: 'Lexend Deca', sans-serif;
+position:inherit;
+
+}
+
+#but3{
+    border: hsl(0, 0%, 95%);
+border-radius: 50px;
+color:hsl(184, 100%, 22%) ;
+background-color:hsl(0, 0%, 95%);
+margin:100px 0px 0px 0px ;
+padding: 15px 45px;
+cursor: pointer;
+font-family: 'Lexend Deca', sans-serif;
+position:inherit;
+
+}    
+
+
+#but1:hover{
+    color:hsla(0, 0%, 100%, 0.75) ;
+    background-color:hsl(31, 77%, 52%) ;
+   
+    border:2px solid hsl(0, 0%, 95%);
+}
+
+#but2:hover{
+    color:hsla(0, 0%, 100%, 0.75) ;
+    background-color:hsl(179, 100%, 13%) ;
+    border: 2px solid hsl(0, 0%, 95%);
+
+}
+#but3:hover{
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color:hsl(184, 100%, 22%);
+    border: 2px solid hsl(0, 0%, 95%) ;
+}
+p {
+    word-spacing: 4px;
+    line-height: 175%;
+    
+}
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    height: 68vh;
+    width: 33vw;
+    padding: 3vw;
+   padding-bottom: 0vw;
+   border-radius: 10px 0px 0px  10px;
+}
+
+#suvs {
+    background-color: hsl(179, 100%, 13%);
+    height: 68vh;
+    width: 33vw;
+    padding: 3vw;
+    padding-bottom: 0vw;
+}
+
+#luxury {
+    background-color: hsl(184, 100%, 22%);
+    height: 68vh;
+    width: 33vw;
+    padding: 3vw;
+    padding-bottom: 0vw;
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+@media only screen and (max-width:380px) {
+    body {
+    margin:60px 20px;
+      }
+  h1{
+margin: 25px 0px;
+  }
+    .car{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+    
+    }
+    #sedans, #suvs, #luxury{
+   width:86vw;
+   height: 54vh;
+   padding: 15vw 3vw;
+    }
+    #sedans{
+
+        border-radius: 10px 10px 0px 0px ;
+    }
+    #luxury{
+        border-radius: 0px 0px 10px 10px;
+    
+    }
+}
